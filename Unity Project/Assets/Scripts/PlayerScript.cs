@@ -20,9 +20,9 @@ public class PlayerScript : MonoBehaviour {
 
 	void OnGUI(){
 
-		GUI.DrawTexture (new Rect (385, 40, NoHealth.width, NoHealth.height), NoHealth);
+		GUI.DrawTexture (new Rect (100, 40, NoHealth.width, NoHealth.height), NoHealth);
 
-		GUI.DrawTexture (new Rect (385, 40, FullHealth.width * (Health/MaxHealth), FullHealth.height), FullHealth);
+		GUI.DrawTexture (new Rect (100, 40, FullHealth.width * (Health/MaxHealth), FullHealth.height), FullHealth);
 
 	}
 
