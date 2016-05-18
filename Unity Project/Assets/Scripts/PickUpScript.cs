@@ -8,43 +8,41 @@ public class PickUpScript : MonoBehaviour {
 
 	public GameObject InventoryHUD;
 
-	public Sprite Clover, Moss, Basil, Salt, Flower;
-
 	void OnTriggerEnter(Collider other){
 
 		if (other.tag == "Player") {
 
 			if (itemName == "Clover") {
 
-				InventoryHUD.GetComponent<Image> ().sprite = Clover;
+				other.SendMessage ("item", itemName);
 
 				Destroy (gameObject);
 			}
 
 			if (itemName == "Moss") {
 
-				InventoryHUD.GetComponent<Image> ().sprite = Moss;
+				other.SendMessage ("item", itemName);
 
 				Destroy (gameObject);
 			}
 
 			if (itemName == "Basil") {
 
-				InventoryHUD.GetComponent<Image> ().sprite = Basil;
+				other.SendMessage ("item", itemName);
 
 				Destroy (gameObject);
 			}
 
 			if (itemName == "Salt") {
 
-				InventoryHUD.GetComponent<Image> ().sprite = Salt;
+				other.SendMessage ("item", itemName);
 
 				Destroy (gameObject);
 			}
 
 			if (itemName == "Flower") {
 
-				InventoryHUD.GetComponent<Image> ().sprite = Flower;
+				other.SendMessage ("item", itemName);
 
 				Destroy (gameObject);
 			}
@@ -58,6 +56,6 @@ public class PickUpScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+
 	}
 }
