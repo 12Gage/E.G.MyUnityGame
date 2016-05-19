@@ -3,7 +3,9 @@ using System.Collections;
 
 public class PlayerScript : MonoBehaviour {
 
-	public int Health;
+	public float Health;
+
+	public float Continue = 0.25f;
 
 	public float MaxHealth = 100.0f;
 
@@ -15,19 +17,33 @@ public class PlayerScript : MonoBehaviour {
 
 	public Texture2D[] rockTextures;
 
-	public int Rocks = 5;
+	public Rigidbody Rock;
 
-	public Rigidbody rock;
+	public Transform firePoint;
 
 	public float Force;
 
-	public Transform firePoint;
+	public int Rocks = 5;
 
 	void OnTriggerEnter(Collider other){
 
 		if (other.tag.Contains ("Enemy")) {
 
 			Health -= 5;
+
+		}
+
+		if (Health <= 0) {
+
+			Health = 0;
+		}
+	}
+
+	void OnTriggerStay(Collider other){
+
+		if (other.tag.Contains ("Enemy")) {
+
+			Health -= Continue;
 
 		}
 
@@ -72,21 +88,22 @@ public class PlayerScript : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-	
+
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
 
-		if (Input.GetButton ("Fire1") && Rocks > 0) {
+		if (Input.GetButtonDown ("Fire1") && Rocks > 0) {
 
-			Rigidbody tempRock = Instantiate (rock, firePoint.position, firePoint.rotation) as Rigidbody;
+			Rigidbody tempRock = Instantiate (Rock, firePoint.position, firePoint.rotation)
+				as Rigidbody;
 
 			Vector3 fwd = firePoint.TransformDirection (Vector3.forward);
 
 			tempRock.velocity = fwd * Force;
 
-			Rocks -= 1;
+			Rocks --;
 
 			RocksGUI.texture = rockTextures [Rocks];
 

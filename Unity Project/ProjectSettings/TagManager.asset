@@ -5,6 +5,12 @@ TagManager:
   serializedVersion: 2
   tags:
   - Enemy
+  - Salt
+  - Flower
+  - Moss
+  - Basil
+  - Ground
+  - Rock
   layers:
   - Default
   - TransparentFX
