@@ -17489,7 +17489,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11443876, guid: 652a71a005c97435e9b8918608a24054, type: 2}
       propertyPath: lookDistance
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 438488, guid: 652a71a005c97435e9b8918608a24054, type: 2}
       propertyPath: m_LocalRotation.y
