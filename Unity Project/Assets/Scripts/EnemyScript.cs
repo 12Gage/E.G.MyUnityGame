@@ -5,15 +5,13 @@ public class EnemyScript : MonoBehaviour {
 
 	public float Health = 5;
 
-	void OnControllerColliderHit(ControllerColliderHit other){
+	void OnTriggerEnter(Collider other){
 
-		if(other.collider.tag == "Rock"){
+		if(other.tag.Contains ("Rock")){
 
-			Health--;
+			Health -= 1;
 		}
-
-		Destroy (other.collider.gameObject);
-
+			
 		if (Health <= 0) {
 
 			Destroy (gameObject);

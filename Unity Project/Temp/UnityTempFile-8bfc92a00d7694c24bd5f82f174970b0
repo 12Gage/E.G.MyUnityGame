@@ -85,5 +85,6 @@
 'Assets/Scripts/PickUpScript.cs'
 'Assets/Scripts/PlayerScript.cs'
 'Assets/Scripts/rockScript.cs'
+'Assets/Scripts/turretScript.cs'
 -r:'/Applications/Unity/Unity.app/Contents/Frameworks/Mono/lib/mono/unity/System.Runtime.Serialization.dll'
 -r:'/Applications/Unity/Unity.app/Contents/Frameworks/Mono/lib/mono/unity/System.Xml.Linq.dll'
