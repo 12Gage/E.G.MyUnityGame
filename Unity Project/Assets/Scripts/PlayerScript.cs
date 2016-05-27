@@ -66,6 +66,22 @@ public class PlayerScript : MonoBehaviour {
 
 	}
 
+    void health(string itemName)
+    {
+        if (itemName == "Steak" && Health <= 35)
+        {
+            Health += 50;
+        }
+        else if (itemName == "Chicken" && Health <= 50)
+        {
+            Health += 25;
+        }
+        else if (itemName == "Apple" && Health <= 75)
+        {
+            Health += 10;
+        }
+    }
+
 	void item(string itemName)
 	{
 		if (itemName == "Clover") {
