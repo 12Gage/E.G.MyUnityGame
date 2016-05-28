@@ -9,8 +9,6 @@ public class turretScript : MonoBehaviour {
 
 	float playerDistance;
 
-	public GameObject turretRotate;
-
 	public float attackDist, lookDistance;
 
 	public Transform firePoint;

@@ -35,7 +35,7 @@ public class PlayerScript : MonoBehaviour {
 
 		if (other.tag.Contains ("bullet")) {
 
-			Health -= 5;
+			Health -= 3;
 		}
 
 		if (Health <= 0) {
