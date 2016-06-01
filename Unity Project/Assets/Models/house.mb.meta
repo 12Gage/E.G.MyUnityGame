@@ -1,139 +1,88 @@
 fileFormatVersion: 2
-guid: 9c26ee67f1e6a49468a189cf4dcb4232
-timeCreated: 1464389740
-licenseType: Free
+guid: 5a7b21226ebb4439ebe6531851c174b7
+timeCreated: 1464183261
+licenseType: Pro
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
-    100000: _UNKNOWN_REF_NODE_fosterParent1
-    100002: //RootNode
-    100004: pCube1
-    100006: pCube10
-    100008: pCube11
-    100010: pCube12
-    100012: pCube2
-    100014: pCube3
-    100016: pCube3 1
-    100018: pCube4
-    100020: pCube5
-    100022: pCube6
-    100024: pCube7
-    100026: pCube8
-    100028: pCube9
-    100030: pCylinder1
-    100032: pCylinder2
-    100034: pCylinder3
-    100036: polySurface1
-    100038: polySurface10
-    100040: polySurface11
-    100042: polySurface12
-    100044: polySurface2
-    100046: polySurface3
-    100048: polySurface4
-    100050: polySurface5
-    100052: polySurface6
-    100054: polySurface7
-    100056: polySurface8
-    100058: polySurface9
-    100060: transform1
-    100062: transform10
-    100064: transform11
-    100066: transform12
-    100068: transform13
-    100070: transform14
-    100072: transform15
-    100074: transform2
-    100076: transform3
-    100078: transform4
-    100080: transform5
-    100082: transform6
-    100084: transform7
-    100086: transform8
-    100088: transform9
-    400000: _UNKNOWN_REF_NODE_fosterParent1
-    400002: //RootNode
-    400004: pCube1
-    400006: pCube10
-    400008: pCube11
-    400010: pCube12
-    400012: pCube2
-    400014: pCube3
-    400016: pCube3 1
-    400018: pCube4
-    400020: pCube5
-    400022: pCube6
-    400024: pCube7
-    400026: pCube8
-    400028: pCube9
-    400030: pCylinder1
-    400032: pCylinder2
-    400034: pCylinder3
-    400036: polySurface1
-    400038: polySurface10
-    400040: polySurface11
-    400042: polySurface12
-    400044: polySurface2
-    400046: polySurface3
-    400048: polySurface4
-    400050: polySurface5
-    400052: polySurface6
-    400054: polySurface7
-    400056: polySurface8
-    400058: polySurface9
-    400060: transform1
-    400062: transform10
-    400064: transform11
-    400066: transform12
-    400068: transform13
-    400070: transform14
-    400072: transform15
-    400074: transform2
-    400076: transform3
-    400078: transform4
-    400080: transform5
-    400082: transform6
-    400084: transform7
-    400086: transform8
-    400088: transform9
-    2300000: pCube2
-    2300002: polySurface1
-    2300004: polySurface10
-    2300006: polySurface11
-    2300008: polySurface12
-    2300010: polySurface2
-    2300012: polySurface3
-    2300014: polySurface4
-    2300016: polySurface5
-    2300018: polySurface6
-    2300020: polySurface7
-    2300022: polySurface8
-    2300024: polySurface9
-    3300000: pCube2
-    3300002: polySurface1
-    3300004: polySurface10
-    3300006: polySurface11
-    3300008: polySurface12
-    3300010: polySurface2
-    3300012: polySurface3
-    3300014: polySurface4
-    3300016: polySurface5
-    3300018: polySurface6
-    3300020: polySurface7
-    3300022: polySurface8
-    3300024: polySurface9
+    100000: //RootNode
+    100002: pCube1
+    100004: pCube10
+    100006: pCube11
+    100008: pCube2
+    100010: pCube3
+    100012: pCube4
+    100014: pCube5
+    100016: pCube6
+    100018: pCube7
+    100020: pCube8
+    100022: pCube9
+    100024: pCylinder1
+    100026: pCylinder2
+    100028: pCylinder3
+    100030: transform1
+    100032: transform2
+    100034: transform3
+    100036: transform4
+    400000: //RootNode
+    400002: pCube1
+    400004: pCube10
+    400006: pCube11
+    400008: pCube2
+    400010: pCube3
+    400012: pCube4
+    400014: pCube5
+    400016: pCube6
+    400018: pCube7
+    400020: pCube8
+    400022: pCube9
+    400024: pCylinder1
+    400026: pCylinder2
+    400028: pCylinder3
+    400030: transform1
+    400032: transform2
+    400034: transform3
+    400036: transform4
+    2300000: pCube11
+    2300002: pCube2
+    2300004: pCube3
+    2300006: pCube4
+    2300008: pCube5
+    2300010: pCube6
+    2300012: pCube7
+    2300014: pCube8
+    2300016: pCube9
+    2300018: pCylinder3
+    3300000: pCube11
+    3300002: pCube2
+    3300004: pCube3
+    3300006: pCube4
+    3300008: pCube5
+    3300010: pCube6
+    3300012: pCube7
+    3300014: pCube8
+    3300016: pCube9
+    3300018: pCylinder3
     4300000: pCube2
-    4300002: polySurface1
-    4300004: polySurface2
-    4300006: polySurface3
-    4300008: polySurface4
-    4300010: polySurface5
-    4300012: polySurface6
-    4300014: polySurface7
-    4300016: polySurface8
-    4300018: polySurface9
-    4300020: polySurface10
-    4300022: polySurface11
-    4300024: polySurface12
+    4300002: pCube3
+    4300004: pCube4
+    4300006: pCube5
+    4300008: pCube6
+    4300010: pCube7
+    4300012: pCube8
+    4300014: pCube9
+    4300016: pCube11
+    4300018: pCylinder3
+    6400000: pCube11
+    6400002: pCube2
+    6400004: pCube3
+    6400006: pCube4
+    6400008: pCube5
+    6400010: pCube6
+    6400012: pCube7
+    6400014: pCube8
+    6400016: pCube9
+    6400018: pCylinder3
     9500000: //RootNode
   materials:
     importMaterials: 1
@@ -161,7 +110,7 @@ ModelImporter:
     lODScreenPercentages: []
     globalScale: 1
     meshCompression: 0
-    addColliders: 0
+    addColliders: 1
     importBlendShapes: 1
     swapUVChannels: 0
     generateSecondaryUV: 0

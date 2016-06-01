@@ -1,0 +1,265 @@
+fileFormatVersion: 2
+guid: 9b70f99e5e39343d9985747e7ba1675c
+timeCreated: 1464732167
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: pCube1
+    100004: pCube2
+    100006: pCube3
+    100008: pCylinder1
+    100010: pCylinder10
+    100012: pCylinder11
+    100014: pCylinder12
+    100016: pCylinder14
+    100018: pCylinder16
+    100020: pCylinder18
+    100022: pCylinder2
+    100024: pCylinder20
+    100026: pCylinder21
+    100028: pCylinder3
+    100030: pCylinder4
+    100032: pCylinder5
+    100034: pCylinder6
+    100036: pCylinder7
+    100038: pCylinder8
+    100040: pCylinder9
+    100042: transform1
+    100044: transform10
+    100046: transform11
+    100048: transform12
+    100050: transform13
+    100052: transform14
+    100054: transform15
+    100056: transform16
+    100058: transform17
+    100060: transform18
+    100062: transform19
+    100064: transform2
+    100066: transform3
+    100068: transform4
+    100070: transform5
+    100072: transform6
+    100074: transform7
+    100076: transform8
+    100078: transform9
+    400000: //RootNode
+    400002: pCube1
+    400004: pCube2
+    400006: pCube3
+    400008: pCylinder1
+    400010: pCylinder10
+    400012: pCylinder11
+    400014: pCylinder12
+    400016: pCylinder14
+    400018: pCylinder16
+    400020: pCylinder18
+    400022: pCylinder2
+    400024: pCylinder20
+    400026: pCylinder21
+    400028: pCylinder3
+    400030: pCylinder4
+    400032: pCylinder5
+    400034: pCylinder6
+    400036: pCylinder7
+    400038: pCylinder8
+    400040: pCylinder9
+    400042: transform1
+    400044: transform10
+    400046: transform11
+    400048: transform12
+    400050: transform13
+    400052: transform14
+    400054: transform15
+    400056: transform16
+    400058: transform17
+    400060: transform18
+    400062: transform19
+    400064: transform2
+    400066: transform3
+    400068: transform4
+    400070: transform5
+    400072: transform6
+    400074: transform7
+    400076: transform8
+    400078: transform9
+    2300000: pCube3
+    3300000: pCube3
+    4300000: pCube3
+    6400000: pCube3
+    7400000: Take 001
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleRotations: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Take 001
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 2
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: pCube1
+        weight: 1
+      - path: pCube1/transform19
+        weight: 1
+      - path: pCube2
+        weight: 1
+      - path: pCube2/transform18
+        weight: 1
+      - path: pCube3
+        weight: 1
+      - path: pCylinder1
+        weight: 1
+      - path: pCylinder1/transform17
+        weight: 1
+      - path: pCylinder2
+        weight: 1
+      - path: pCylinder2/transform16
+        weight: 1
+      - path: pCylinder3
+        weight: 1
+      - path: pCylinder3/transform15
+        weight: 1
+      - path: pCylinder4
+        weight: 1
+      - path: pCylinder4/transform14
+        weight: 1
+      - path: pCylinder5
+        weight: 1
+      - path: pCylinder5/transform13
+        weight: 1
+      - path: pCylinder6
+        weight: 1
+      - path: pCylinder6/transform12
+        weight: 1
+      - path: pCylinder7
+        weight: 1
+      - path: pCylinder7/transform11
+        weight: 1
+      - path: pCylinder8
+        weight: 1
+      - path: pCylinder8/transform10
+        weight: 1
+      - path: pCylinder9
+        weight: 1
+      - path: pCylinder9/transform9
+        weight: 1
+      - path: pCylinder10
+        weight: 1
+      - path: pCylinder10/transform8
+        weight: 1
+      - path: pCylinder11
+        weight: 1
+      - path: pCylinder11/transform7
+        weight: 1
+      - path: pCylinder12
+        weight: 1
+      - path: pCylinder12/transform6
+        weight: 1
+      - path: pCylinder14
+        weight: 1
+      - path: pCylinder14/transform5
+        weight: 1
+      - path: pCylinder16
+        weight: 1
+      - path: pCylinder16/transform4
+        weight: 1
+      - path: pCylinder18
+        weight: 1
+      - path: pCylinder18/transform3
+        weight: 1
+      - path: pCylinder20
+        weight: 1
+      - path: pCylinder20/transform2
+        weight: 1
+      - path: pCylinder21
+        weight: 1
+      - path: pCylinder21/transform1
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 1
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 100
+    meshCompression: 0
+    addColliders: 1
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
