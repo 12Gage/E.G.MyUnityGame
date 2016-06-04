@@ -11,6 +11,8 @@ TagManager:
   - Basil
   - Ground
   - Rock
+  - bullet
+  - Apple
   layers:
   - Default
   - TransparentFX

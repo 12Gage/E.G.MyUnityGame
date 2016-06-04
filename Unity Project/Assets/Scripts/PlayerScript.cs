@@ -25,6 +25,8 @@ public class PlayerScript : MonoBehaviour {
 
 	public int Rocks = 5;
 
+    public bool clover, moss, salt, basil, flower;
+
 	void OnTriggerEnter(Collider other){
 
 		if (other.tag.Contains ("Enemy")) {
@@ -88,21 +90,31 @@ public class PlayerScript : MonoBehaviour {
 
 			Clover.enabled = true;
 
+            clover = true;
+
 		}else if (itemName == "Moss") {
 
 			Moss.enabled = true;
+
+            moss = true;
 
 		}else if (itemName == "Basil") {
 
 			Basil.enabled = true;
 
+            basil = true;
+
 		}else if (itemName == "Salt") {
 
 			Salt.enabled = true;
 
+            salt = true;
+
 		}else if (itemName == "Flower") {
 
 			Flower.enabled = true;
+
+            flower = true;
 
 		}
 	}

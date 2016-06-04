@@ -12,6 +12,8 @@ GameObject:
   - 23: {fileID: 2393612}
   - 95: {fileID: 9520178}
   - 54: {fileID: 5432728}
+  - 114: {fileID: 11429540}
+  - 65: {fileID: 6598272}
   m_Layer: 0
   m_Name: bullet
   m_TagString: bullet
@@ -28,6 +30,7 @@ Transform:
   m_LocalRotation: {x: 0.7071066, y: 0, z: 0, w: -0.70710695}
   m_LocalPosition: {x: 1.4034, y: 4.297, z: 3.096}
   m_LocalScale: {x: 0.009647687, y: 0.020377364, z: 0.009647681}
+  m_LocalEulerAnglesHint: {x: -89.980194, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -79,6 +82,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!65 &6598272
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 113226}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.3668544, y: 3.335634, z: 2.3668547}
+  m_Center: {x: 0.00000011920929, y: 0.6678019, z: 0.000030398369}
 --- !u!95 &9520178
 Animator:
   serializedVersion: 3
@@ -96,6 +111,18 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11429540
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 113226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99af79d79e78e42e7beeabe078c39a91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rockDeath: 2
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
