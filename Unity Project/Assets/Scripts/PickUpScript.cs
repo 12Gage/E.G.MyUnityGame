@@ -46,6 +46,7 @@ public class PickUpScript : MonoBehaviour {
 
 				Destroy (gameObject);
 			}
+
 		}
 	}
 

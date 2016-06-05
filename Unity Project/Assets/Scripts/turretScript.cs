@@ -25,6 +25,8 @@ public class turretScript : MonoBehaviour {
 
 	public int minHealth, maxHealth;
 
+    public bool attack;
+
 	void OnTriggerEnter(Collider other){
 
 		if(other.tag.Contains ("Rock")){
@@ -33,15 +35,19 @@ public class turretScript : MonoBehaviour {
 			
 		}
 
+        if (other.tag.Contains("Rock") && GameObject.FindWithTag("Player").GetComponent<PlayerScript>().Hyde == false)
+        {
+
+            Health--;
+
+            attack = true;
+
+        }
+
 		if (Health <= 0) {
 
 			Destroy (gameObject);
 		}
-	}
-
-	void OnGUI(){
-
-		GUI.Label(new Rect (10, 15, 400, 50), "The Distance to the Player is " + playerDistance);
 	}
 
 	// Use this for initialization
@@ -60,12 +66,13 @@ public class turretScript : MonoBehaviour {
 
 		playerDistance = Vector3.Distance (transform.position, playerPos.position);
 
-		if (playerDistance <= lookDistance) {
+        if (playerDistance <= lookDistance && GameObject.FindWithTag("Player").GetComponent<PlayerScript>().Hyde == true)
+        {
 
 			transform.LookAt (target);
 		}
 
-		if (playerDistance <= attackDist) {
+		if (playerDistance <= attackDist && GameObject.FindWithTag("Player").GetComponent<PlayerScript>().Hyde == true) {
 
 			if (Time.time > fireTime) {
 
@@ -79,6 +86,27 @@ public class turretScript : MonoBehaviour {
 				fireTime = Time.time + fireRate;
 			}
 		}
+
+        if (attack == true)
+        {
+            if (playerDistance <= attackDist)
+            {
+                transform.LookAt(target);
+
+                if (Time.time > fireTime)
+                {
+
+                    Rigidbody tempBullet = Instantiate(bullet, firePoint.position, firePoint.rotation)
+                        as Rigidbody;
+
+                    Vector3 fwd = firePoint.TransformDirection(Vector3.up);
+
+                    tempBullet.velocity = fwd * bulletForce;
+
+                    fireTime = Time.time + fireRate;
+                }
+            }
+        }
 
 	}
 }

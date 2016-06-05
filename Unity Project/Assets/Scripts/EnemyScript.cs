@@ -17,12 +17,22 @@ public class EnemyScript : MonoBehaviour {
 
 	public float attackDist;
 
+    public bool attack;
+
 	void OnTriggerEnter(Collider other){
 
 		if(other.tag.Contains ("Rock")){
 
 			Health -= 1;
 		}
+
+        if (other.tag.Contains("Rock") && GameObject.FindWithTag("Player").GetComponent<PlayerScript>().Hyde == false)
+        {
+
+            Health -= 1;
+
+            attack = true;
+        }
 			
 		if (Health <= 0) {
 
@@ -46,7 +56,8 @@ public class EnemyScript : MonoBehaviour {
 
 		playerDistance = Vector3.Distance (transform.position, playerPos.position);
 
-		if (playerDistance <= attackDist) {
+        if (playerDistance <= attackDist && GameObject.FindWithTag("Player").GetComponent<PlayerScript>().Hyde == true)
+        {
 
 			transform.LookAt (target);
 
@@ -56,5 +67,20 @@ public class EnemyScript : MonoBehaviour {
 
 			controller.SimpleMove (forward * enemySpeed);
 		}
+
+        if (attack == true)
+        {
+            if (playerDistance <= attackDist)
+            {
+
+                transform.LookAt(target);
+
+                CharacterController controller = GetComponent<CharacterController>();
+
+                Vector3 forward = transform.TransformDirection(Vector3.forward);
+
+                controller.SimpleMove(forward * enemySpeed);
+            }
+        }
 	}
 }

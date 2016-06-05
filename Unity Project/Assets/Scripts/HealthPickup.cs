@@ -11,7 +11,7 @@ public class HealthPickup : MonoBehaviour {
         if (other.tag == "Player")
         {
 
-            if (itemName == "Steak")
+            if (itemName == "Steak" && GameObject.FindWithTag("Player").GetComponent<PlayerScript>().Health <= 25)
             {
 
                 other.SendMessage("health", itemName);
@@ -19,7 +19,7 @@ public class HealthPickup : MonoBehaviour {
                 Destroy(gameObject);
             }
 
-            if (itemName == "Chicken")
+            if (itemName == "Chicken" && GameObject.FindWithTag("Player").GetComponent<PlayerScript>().Health <= 50)
             {
 
                 other.SendMessage("health", itemName);
@@ -27,7 +27,7 @@ public class HealthPickup : MonoBehaviour {
                 Destroy(gameObject);
             }
 
-            if (itemName == "Apple")
+            if (itemName == "Apple" && GameObject.FindWithTag("Player").GetComponent<PlayerScript>().Health <= 75)
             {
 
                 other.SendMessage("health", itemName);

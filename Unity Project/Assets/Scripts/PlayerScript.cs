@@ -28,6 +28,8 @@ public class PlayerScript : MonoBehaviour {
 
     public bool clover, moss, salt, basil, flower;
 
+    public bool Hyde;
+
     public string LeveltoLoad, LeveltoLoad2;
 
 	void OnTriggerEnter(Collider other){
@@ -72,6 +74,15 @@ public class PlayerScript : MonoBehaviour {
 
 		GUI.DrawTexture (new Rect (100, 40, FullHealth.width * (Health/MaxHealth), FullHealth.height), FullHealth);
 
+        if (Hyde == true)
+        {
+            GUI.Label(new Rect(10, 15, 400, 50), "You are Mr. Hyde");
+        }
+
+        if (Hyde == false)
+        {
+            GUI.Label(new Rect(10, 15, 400, 50), "You are Dr. Jekyll");
+        }
 	}
 
     void health(string itemName)
@@ -150,13 +161,22 @@ public class PlayerScript : MonoBehaviour {
 			Rocks --;
 
 			RocksGUI.texture = rockTextures [Rocks];
-
 		}
+
+        if (Input.GetKeyDown("h") && Hyde == false)
+        {
+            Hyde = true;
+        }
+
+        if (Input.GetKeyDown("j") && Hyde == true)
+        {
+            Hyde = false;
+        }
 	}
 
-    void pickupRocks()
+    void pickupRocks(string itemName)
     {
-        Rocks++;
+        Rocks += 2;
 
         RocksGUI.texture = rockTextures[Rocks];
     }
