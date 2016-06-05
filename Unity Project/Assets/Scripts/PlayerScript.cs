@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class PlayerScript : MonoBehaviour {
 
@@ -27,12 +28,13 @@ public class PlayerScript : MonoBehaviour {
 
     public bool clover, moss, salt, basil, flower;
 
+    public string LeveltoLoad, LeveltoLoad2;
+
 	void OnTriggerEnter(Collider other){
 
 		if (other.tag.Contains ("Enemy")) {
 
 			Health -= 5;
-
 		}
 
 		if (other.tag.Contains ("bullet")) {
@@ -43,6 +45,8 @@ public class PlayerScript : MonoBehaviour {
 		if (Health <= 0) {
 
 			Health = 0;
+
+            SceneManager.LoadScene(LeveltoLoad);
 		}
 	}
 
@@ -57,6 +61,8 @@ public class PlayerScript : MonoBehaviour {
 		if (Health <= 0) {
 
 			Health = 0;
+
+            SceneManager.LoadScene(LeveltoLoad);
 		}
 	}
 
@@ -117,6 +123,11 @@ public class PlayerScript : MonoBehaviour {
             flower = true;
 
 		}
+
+        if (clover == true && moss == true && basil == true && salt == true && flower == true)
+        {
+            SceneManager.LoadScene(LeveltoLoad2);
+        }
 	}
 
 	// Use this for initialization
@@ -142,4 +153,11 @@ public class PlayerScript : MonoBehaviour {
 
 		}
 	}
+
+    void pickupRocks()
+    {
+        Rocks++;
+
+        RocksGUI.texture = rockTextures[Rocks];
+    }
 }

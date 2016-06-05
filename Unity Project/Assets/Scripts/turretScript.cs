@@ -72,7 +72,7 @@ public class turretScript : MonoBehaviour {
 				Rigidbody tempBullet = Instantiate (bullet, firePoint.position, firePoint.rotation) 
 					as Rigidbody;
 
-				Vector3 fwd = firePoint.TransformDirection (Vector3.forward);
+				Vector3 fwd = firePoint.TransformDirection (Vector3.up);
 
 				tempBullet.velocity = fwd * bulletForce;
 
