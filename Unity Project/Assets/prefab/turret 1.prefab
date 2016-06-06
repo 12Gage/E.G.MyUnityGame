@@ -464,7 +464,7 @@ GameObject:
   - 114: {fileID: 11429028}
   m_Layer: 0
   m_Name: turret 1
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2029,8 +2029,9 @@ MonoBehaviour:
   fireRate: 2
   bulletForce: 30
   Health: 0
-  minHealth: 2
-  maxHealth: 5
+  minHealth: 3
+  maxHealth: 6
+  attack: 0
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

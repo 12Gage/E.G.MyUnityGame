@@ -11,6 +11,11 @@ public class rockScript : MonoBehaviour {
 
 			Destroy (gameObject);
 		}
+
+		if (other.gameObject.tag == "Enemy") {
+
+			Destroy (GameObject.FindWithTag("Rock"));
+		}
 	}
 
 	// Use this for initialization

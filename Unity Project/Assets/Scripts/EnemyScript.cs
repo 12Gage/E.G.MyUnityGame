@@ -19,6 +19,8 @@ public class EnemyScript : MonoBehaviour {
 
     public bool attack;
 
+	public Animator Walk;
+
 	void OnTriggerEnter(Collider other){
 
 		if(other.tag.Contains ("Rock")){
@@ -58,8 +60,9 @@ public class EnemyScript : MonoBehaviour {
 
         if (playerDistance <= attackDist && GameObject.FindWithTag("Player").GetComponent<PlayerScript>().Hyde == true)
         {
-
 			transform.LookAt (target);
+
+			Walk.SetTrigger ("Walk");
 
 			CharacterController controller = GetComponent<CharacterController> ();
 
@@ -72,8 +75,9 @@ public class EnemyScript : MonoBehaviour {
         {
             if (playerDistance <= attackDist)
             {
-
                 transform.LookAt(target);
+
+				Walk.SetTrigger ("Walk");
 
                 CharacterController controller = GetComponent<CharacterController>();
 
