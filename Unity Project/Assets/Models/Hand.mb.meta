@@ -1,78 +1,15 @@
 fileFormatVersion: 2
-guid: 511a5bc4625085543bf563015e2e8eea
-timeCreated: 1464998541
-licenseType: Free
+guid: 4a9f7e3006e0e42ce80c33bb1507590d
+timeCreated: 1465331474
+licenseType: Pro
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
     100000: //RootNode
-    100002: pCube10
-    100004: pCube5
-    100006: pCube6
-    100008: pCube7
-    100010: pCube8
-    100012: pCube9
-    100014: pCylinder1
-    100016: pCylinder2
-    100018: transform1
-    100020: transform2
-    100022: transform3
-    100024: transform4
-    100026: transform5
-    100028: transform6
-    100030: transform7
-    100032: pCube11
-    100034: pCube12
-    100036: pCube13
-    100038: pCube14
-    100040: pCube15
-    100042: pCube16
-    100044: pCube17
-    100046: pCube18
-    100048: transform10
-    100050: transform11
-    100052: transform12
-    100054: transform13
-    100056: transform14
-    100058: transform8
-    100060: transform9
     400000: //RootNode
-    400002: pCube10
-    400004: pCube5
-    400006: pCube6
-    400008: pCube7
-    400010: pCube8
-    400012: pCube9
-    400014: pCylinder1
-    400016: pCylinder2
-    400018: transform1
-    400020: transform2
-    400022: transform3
-    400024: transform4
-    400026: transform5
-    400028: transform6
-    400030: transform7
-    400032: pCube11
-    400034: pCube12
-    400036: pCube13
-    400038: pCube14
-    400040: pCube15
-    400042: pCube16
-    400044: pCube17
-    400046: pCube18
-    400048: transform10
-    400050: transform11
-    400052: transform12
-    400054: transform13
-    400056: transform14
-    400058: transform8
-    400060: transform9
-    2300000: pCylinder2
-    2300002: pCube18
-    3300000: pCylinder2
-    3300002: pCube18
-    4300000: pCylinder2
-    4300002: pCube18
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: pCube1
     9500000: //RootNode
   materials:
     importMaterials: 1
